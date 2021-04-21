@@ -12,4 +12,5 @@ export default defineConfig({
     //   tsCompiler: 'esbuild',
     //   createCustomServer: () => IServer 
     // })]
+  ]
 })
