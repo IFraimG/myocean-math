@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import  { useEffect } from "react"
 import { useDispatch } from "react-redux"
 import Profile from "../components/profile/Profile"
 import { setAuthAction, setUserTokenAction } from "../core/store/actions/auth"

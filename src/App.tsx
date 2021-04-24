@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Header from './components/app/Header'
@@ -10,6 +10,16 @@ import HomePage from './pages/Home'
 import LevelPage from './pages/Level'
 import ProfilePage from './pages/Profile'
 
+// const pages = import.meta.globEager('./pages/*.jsx')
+
+// const routes = Object.keys(pages).map((path) => {
+//   const name = path.match(/\.\/pages\/(.*)\.jsx$/)[1]
+//   return {
+//     name,
+//     path: name === 'Home' ? '/' : `/${name.toLowerCase()}`,
+//     component: pages[path].default
+//   }
+// })
 
 function App() {
   const dispatch = useDispatch()

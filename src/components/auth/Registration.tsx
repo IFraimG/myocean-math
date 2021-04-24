@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import  { useRef, useState } from "react";
 import FRbutton from "../app/FRbutton";
 import { fr_stylesModal } from "../../core/styles/root/modal";
 import TextField from "@material-ui/core/TextField";
