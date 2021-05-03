@@ -4,7 +4,7 @@ import Profile from "../components/profile/Profile"
 import { setAuthAction, setUserTokenAction } from "../core/store/actions/auth"
 import AuthAPI from "../core/store/api/auth"
 import { getFinishedTasksThunk } from "../core/store/reducers/auth"
-
+import React from "react"
 const ProfilePage = () => {
   const dispatch = useDispatch()
   useEffect(() => {

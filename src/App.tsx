@@ -1,3 +1,4 @@
+import React from "react"
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
@@ -33,7 +34,7 @@ function App() {
   }, [])
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       { !isLoader ? <Header /> : "" }
       <Switch>
         <Route exact path="/">
