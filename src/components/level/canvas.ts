@@ -9,7 +9,7 @@ class User {
     constructor(public canvasWidth: number, public canvasHeight: number) {
         this.x = canvasWidth - 200
         this.y = canvasHeight - 200
-        this.img = "/src/assets/player.png"
+        this.img = "../../assets/player.png"
         this.width = 86
         this.height = 156
         this.user = new Image()
@@ -82,8 +82,8 @@ export const createCanvas = (canvas: any, level: number) => {
     let user = new User(canvasWidth, canvasHeight)
     for (let i = 0; i < level; i++) {
         let flag = new Image()
-        if (i + 1 == level) flag.src = "/src/assets/flagfull.png"
-        else flag.src = "/src/assets/flagwin.png"
+        if (i + 1 == level) flag.src = "../../assets/flagfull.png"
+        else flag.src = "../../assets/flagwin.png"
         ctx.drawImage(flag, arrPositions[i].x, arrPositions[i].y, 86, 86)
         user.clear(ctx)
         user.moveController(i)
