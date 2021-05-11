@@ -82,8 +82,8 @@ export const createCanvas = (canvas: any, level: number) => {
     let user = new User(canvasWidth, canvasHeight)
     for (let i = 0; i < level; i++) {
         let flag = new Image()
-        if (i + 1 == level) flag.src = "../../assets/flagfull.png"
-        else flag.src = "../../assets/flagwin.png"
+        if (i + 1 == level) flag.src = "/src/assets/flagfull.png"
+        else flag.src = "assets/flagwin.png"
         ctx.drawImage(flag, arrPositions[i].x, arrPositions[i].y, 86, 86)
         user.clear(ctx)
         user.moveController(i)

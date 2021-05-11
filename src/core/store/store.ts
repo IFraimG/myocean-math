@@ -5,11 +5,10 @@ import AppReducer from "./reducers/app"
 import LevelReducer from "./reducers/level"
 
 // @ts-ignore
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 let rootReducer = combineReducers({ AuthReducer, AppReducer, LevelReducer })
 
 export type AppStateType = ReturnType<typeof rootReducer>
-const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunkMiddleware)))
+const store = createStore(rootReducer, applyMiddleware(thunkMiddleware))
 
 export default store
